@@ -32,14 +32,14 @@ var blockHostsList = [
  * @constructor
  */
 function FindProxyForURL(url, host) {
-
+    
     // 是否是由于自身网络问题（比如网通的访问不了一些站点，但电信是OK的）
     for(i = 0; i < badHostsList.length; i++ ) {
         if( host.indexOf(badHostsList[i]) !== -1 ){
             return "SOCKS5 " + proxyIp + ":"+ aliProxyProt;
         }
     }
-
+    
     for(i = 0; i < blockHostsList.length; i++){
         if( host.indexOf(blockHostsList[i]) !== -1 ){
             return "SOCKS5 " + proxyIp + ":"+ hkProxyPort;

@@ -20,7 +20,8 @@ var blockHostsList = [
     "facebook",
     "xhamster",
     "ahcdn.com",
-    "ytimg.com"
+    "ytimg.com",
+    "rawgit"
 ];
 
 /**

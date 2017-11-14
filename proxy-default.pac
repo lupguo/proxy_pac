@@ -8,7 +8,8 @@ var badHostsList = [
     "gearbest.com",
     "laravelcollective.com",
     "icloud.com",
-    "supervisord.org"
+    "supervisord.org",
+    "akamai.bintray.com"
 ];
 
 //block hosts by great-wall
@@ -21,7 +22,10 @@ var blockHostsList = [
     "xhamster",
     "ahcdn.com",
     "ytimg.com",
-    "rawgit"
+    "rawgit",
+    "cn.linux.vbird.org",
+    "twitter.com",
+    "marketo.net"
 ];
 
 /**

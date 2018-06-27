@@ -15,16 +15,22 @@ var badHostsList = [
 //block hosts by great-wall
 var blockHostsList = [
     "google",
-    "gstatic",
-    "zh.wikipedia.org",
+    "twitter.com",
     "youtube.com",
+    "docker.com",
+    "wikipedia",
+    ".wiki",
+    "atlassian",
+    "gstatic",
     "facebook",
     "xhamster",
+    "segment.com",
     "ahcdn.com",
     "ytimg.com",
+    "ruanyifeng.com",
+    "wangbase.com",
     "rawgit",
     "cn.linux.vbird.org",
-    "twitter.com",
     "marketo.net"
 ];
 
@@ -39,11 +45,11 @@ var blockHostsList = [
 function FindProxyForURL(url, host) {
 
     // 是否是由于自身网络问题（比如网通的访问不了一些站点，但电信是OK的情况）
-    for(i = 0; i < badHostsList.length; i++ ) {
-        if( host.indexOf(badHostsList[i]) !== -1 ){
-            return "SOCKS5 " + proxyIp + ":"+ aliProxyPort;
-        }
-    }
+  //  for(i = 0; i < badHostsList.length; i++ ) {
+  //      if( host.indexOf(badHostsList[i]) !== -1 ){
+  //          return "SOCKS5 " + proxyIp + ":"+ aliProxyPort;
+  //      }
+  //  }
 
     // 针对被墙网址，走hk代理
     for(i = 0; i < blockHostsList.length; i++){

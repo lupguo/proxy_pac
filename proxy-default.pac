@@ -4,7 +4,6 @@ var hkProxyPort  = 1443; // used for block hosts proxy
 
 //bad hosts from your network
 var badHostsList = [
-    "vagrantup.com",
     "gearbest.com",
     "laravelcollective.com",
     "icloud.com",
@@ -21,8 +20,29 @@ var blockHostsList = [
     "wikipedia",
     ".wiki",
     "atlassian",
+    "cloudfront.net",
     "gstatic",
+    "gohugo.io",
+    "snapchat",
+    "golang",
+    "go-zh.org",
+    "programming.guide",
+    "appspot.com",
+    "amazonaws.com",
+    "github",
+    "brew",
+    "twimg",
+    "jetbrains.com",
+    "highlightjs.org",
+    "privoxy.org",
+    "haproxy.org",
+    "apple.com",
+    "lintut.com",
     "facebook",
+    "stackoverflow.com",
+    "disqus",
+    "vagrantup.com",
+    "hashicorp.com",
     "xhamster",
     "segment.com",
     "ahcdn.com",
@@ -31,7 +51,11 @@ var blockHostsList = [
     "wangbase.com",
     "rawgit",
     "cn.linux.vbird.org",
-    "marketo.net"
+    "marketo.net",
+    "dropbox.com",
+    "ggpht.com",
+    "doubleclick",
+    "goo.gl"
 ];
 
 /**

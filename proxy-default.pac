@@ -63,15 +63,17 @@ var hkProxyPort = 1443
 var tkProxyPort = 18180
 
 var proxyList = [
+    //Proxy By HkProxy
     {
         ip: proxyIp,
         port: hkProxyPort,
-        hosts: comHostsList,
+        hosts: blockHostsList,
     },
+    //Proxy By TkProxy
     {
         ip: proxyIp,
         port: tkProxyPort,
-        hosts: blockHostsList,
+        hosts: comHostsList,
     },
 ]
 

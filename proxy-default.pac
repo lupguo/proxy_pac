@@ -2,10 +2,15 @@
 var comHostsList = [
     'gw-ec.com',
     'hqygou.com',
-    'globalegrow.com',
+    //'globalegrow.com',
+    'apidoc.gearbest-beta.com',
+    'kibana2.egomsl.com',
     'egomsl',
     'rms110',
     '192.168.0.229',
+    '119.81.140.227',
+    '10.60.50.68',
+    '10.40',
 ]
 
 //block hosts by great-wall
@@ -16,9 +21,15 @@ var blockHostsList = [
     'docker.com',
     'wikipedia',
     '.wiki',
+    'php.net',
     'atlassian',
+    'alpinelinux',
     'cloudfront.net',
     'gstatic',
+    'cldup',
+    'cloudup',
+    'vimeo.com',
+    'quora',
     'gohugo.io',
     'snapchat',
     'golang',
@@ -28,6 +39,7 @@ var blockHostsList = [
     'appspot.com',
     'amazonaws.com',
     'github',
+    'gitbooks',
     'brew',
     'twimg',
     'jetbrains.com',
@@ -41,8 +53,6 @@ var blockHostsList = [
     'disqus',
     'vagrantup.com',
     'hashicorp.com',
-    'xhamster',
-    'xhcdn',
     'tsyndicate',
     'segment.com',
     'ahcdn.com',
@@ -56,10 +66,12 @@ var blockHostsList = [
     'ggpht.com',
     'doubleclick',
     'goo.gl',
+    'mongodb',
+    'potatso.com',
 ]
 
 var proxyIp = '127.0.0.1'
-var hkProxyPort = 1443
+var hkProxyPort = 10443
 var tkProxyPort = 18180
 
 var proxyList = [
@@ -87,7 +99,7 @@ var proxyList = [
  */
 function FindProxyForURL (url, host) {
 
-    // 查看设置的blo
+    // 查看设置的block
     for (let i = 0; i < proxyList.length; i++) {
         let pxy = proxyList[i]
 

@@ -88,10 +88,10 @@ var proxyList = [
 function FindProxyForURL (url, host) {
 
     // 查看设置的blo
-    for (let i = 0; i < proxyList.length; i++) {
-        let pxy = proxyList[i]
+    for (var i = 0; i < proxyList.length; i++) {
+        var pxy = proxyList[i]
 
-        for (let j = 0; j < pxy.hosts.length; j++) {
+        for (j = 0; j < pxy.hosts.length; j++) {
             if (host.indexOf(pxy.hosts[j]) !== -1) {
                 return 'SOCKS5 ' + pxy.ip + ':' + pxy.port
             }

@@ -2,6 +2,7 @@
 const GWBlockHosts = [
     'windows.net',
     'wwads',
+    'bitwarden',
     'protechts',
     'cedex',
     'phnc',
@@ -197,7 +198,6 @@ const GWBlockHosts = [
     'brew',
     'medium',
     'twimg',
-    'jetbrains.com',
     'highlightjs.org',
     'privoxy.org',
     'haproxy.org',
@@ -299,8 +299,8 @@ const GWBlockHosts = [
     'mongodb',
     'potatso.com',
     'valuecom.com',
-    'yimg',
     'techcrunch',
+    'gstatic.com',
     'xuesousou',
     'archive.org',
     'vitess',
@@ -338,8 +338,11 @@ const TencentInnerHosts = [
 ];
 
 // ChatGPT
-const ChatGPTHosts = [
+const CloudwrapHosts = [
+    'jetbrains.com',
     'tubi',
+    'featureassets',
+    'prodregistryv2',
     'openai',
     'oaistatic',
     'chatgpt',
@@ -368,7 +371,7 @@ const proxyConfigs = [
         address: "PROXY 127.0.0.1:12639",
     },
     {
-        hosts: ChatGPTHosts,
+        hosts: CloudwrapHosts,
         address: "SOCKS5 127.0.0.1:10553",
     },
     {

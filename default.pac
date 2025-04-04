@@ -2,13 +2,16 @@
 const GWBlockHosts = [
     'windows.net',
     'wwads',
+    'astral',
+    'pixlr',
     'bitwarden',
+    'ubisoft',
     'protechts',
+    'spotify',
     'cedex',
     'phnc',
     'javh',
     'langchain',
-    'github.io',
     'steam',
     'v2w.org',
     'v2ray',
@@ -42,6 +45,8 @@ const GWBlockHosts = [
     'live.com',
     'microsoftonline',
     'ip138.com',
+    'centos',
+    'scratch',
     'daily.dev',
     'marktechpost',
     'fakeyou.com',
@@ -98,9 +103,12 @@ const GWBlockHosts = [
     'algolianet',
     'amplitude',
     'youtu.be',
-    'docker',
     'utteranc',
     'optimizely',
+    'docker',
+    'clashx',
+    'alfredapp.com',
+    'chatwise',
     'discourse-cdn',
     'haveibeenpwned',
     'ankiweb',
@@ -144,6 +152,8 @@ const GWBlockHosts = [
     'cldup',
     'cloudup',
     'vimeo.com',
+    'codegpt.co',
+    'jetbrains',
     'quora',
     'gohugo.io',
     'snapchat',
@@ -283,7 +293,6 @@ const GWBlockHosts = [
     'labstack',
     'principlesofchaos',
     'programmaticponderings',
-    't.co',
     'google-analytics',
     'imgix.net',
     'amazonaws.com',
@@ -318,11 +327,9 @@ const GWBlockHosts = [
     'azure.com',
     'azure.net',
     'suno.ai',
-    'apple',
     'bbc',
     '6parkbbs',
     'dioco.io',
-    'framerusercontent',
     'framerstatic',
     'posthog',
     'jsdelivr',
@@ -334,15 +341,16 @@ const GWBlockHosts = [
 // 腾讯内部Host
 const TencentInnerHosts = [
     'woa.com',
-    'oa.com',
+    'oa.com'
 ];
 
 // ChatGPT
 const CloudwrapHosts = [
-    'jetbrains.com',
     'tubi',
+    'affonso',
     'featureassets',
     'prodregistryv2',
+    'digg.com',
     'openai',
     'oaistatic',
     'chatgpt',
@@ -352,16 +360,25 @@ const CloudwrapHosts = [
     'intercom',
     'getsentry',
     'instagram',
+    'perplexity',
     'upwork',
     'x.com',
+    'x.ai',
+    'grok.com',
+    'brave.com',
+    'cloudflare',
+    'datadoghq',
+    'vimeocdn',
     'twitter.com',
     'twimg',
+    'brave.com',
     'deepart'
 ]
 
 // Direct - 不走代理的域名，优先级最高
 const NoProxyHosts = [
-    'tencent.com'
+    'tencent.com',
+    'archstat.com'
 ]
 
 // 代理主机列表
@@ -402,7 +419,7 @@ function FindProxyForURL(url, host) {
         let proxy = proxyConfigs[i]
         for (let j = 0; j < proxy.hosts.length; j++) {
             if (host.indexOf(proxy.hosts[j]) !== -1) {
-                // console.log("match: ", proxy.hosts[j])
+//                console.log("match: ", proxy.hosts[j])
                 return proxy.address
             }
         }

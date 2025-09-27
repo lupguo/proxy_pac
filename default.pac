@@ -1,7 +1,12 @@
 // 阻塞host
 const GWBlockHosts = [
     'windows.net',
+    'btcc',
+    'agentgpt',
     'wwads',
+    'sketchfab',
+    'theresanai',
+    'aiawesome',
     'astral',
     'mkdocs.org',
     'pixlr',
@@ -43,7 +48,6 @@ const GWBlockHosts = [
     'msftauth',
     'live.com',
     'microsoftonline',
-    'ip138.com',
     'centos',
     'scratch',
     'daily.dev',
@@ -225,7 +229,6 @@ const GWBlockHosts = [
     'jshell',
     'stackshare',
     'lintut.com',
-    'facebook',
     'mediawiki',
     'datacenterknowledge',
     'addthis',
@@ -327,9 +330,14 @@ const GWBlockHosts = [
     'jsdelivr',
     'sofiri.com',
     'shenfendaquan',
-    'google',
     'gmail',
-    'anthropic',
+    'binance',
+    'bnbstatic',
+    'saasexch',
+    'okx',
+    'scmp.com',
+    'aboluowang',
+    'artificialanalysis',
     'hotdeals'
 ];
 
@@ -342,7 +350,31 @@ const TencentInnerHosts = [
 // ChatGPT
 const CloudwrapHosts = [
     'tubi',
+    'infini.money',
+    'deepai',
+    'tryproxy',
+    'bitget',
     'deepmind',
+    'oaiusercontent',
+    'mixpanel',
+    'stability',
+    'squarespace',
+    '138.com',
+    'google',
+    'claude',
+    'anthropic',
+    'facebook',
+    'intellimize',
+    'sanity',
+    'bybit',
+    'naver',
+    'abtest',
+    'datasink',
+    'bycsi',
+    'wsot',
+    'creativecdn',
+    'hubspotonwebflow',
+    'website-files',
     'affonso',
     'featureassets',
     'prodregistryv2',
@@ -363,7 +395,12 @@ const CloudwrapHosts = [
     'upwork',
     'x.com',
     'x.ai',
-    'grok.com',
+    'elevenlabs',
+    'grok',
+    'depay',
+    'usmobile',
+    'gosquared',
+    'frontapp',
     'brave.com',
     'cloudflare',
     'datadoghq',
@@ -388,11 +425,11 @@ const proxyConfigs = [
     },
     {
         hosts: CloudwrapHosts,
-        address: "SOCKS5 127.0.0.1:10553",
+        address: "PROXY 127.0.0.1:8118"
     },
     {
         hosts: GWBlockHosts,
-        address: "SOCKS5 127.0.0.1:10443",
+        address: "PROXY 127.0.0.1:8118"
     }
 ];
 

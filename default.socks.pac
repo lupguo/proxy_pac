@@ -425,11 +425,11 @@ const proxyConfigs = [
     },
     {
         hosts: CloudwrapHosts,
-        address: "SOCKS 127.0.0.1:10222"
+        address: "SOCKS5 127.0.0.1:10222"
     },
     {
         hosts: GWBlockHosts,
-        address: "SOCKS 127.0.0.1:10222"
+        address: "SOCKS5 127.0.0.1:10222"
     }
 ];
 

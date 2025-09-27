@@ -429,7 +429,7 @@ const proxyConfigs = [
     },
     {
         hosts: GWBlockHosts,
-        address: "SOCKS 127.0.0.1:8118"
+        address: "SOCKS 127.0.0.1:10222"
     }
 ];
 
